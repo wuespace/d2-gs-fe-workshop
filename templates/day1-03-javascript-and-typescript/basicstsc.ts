@@ -24,7 +24,7 @@ console.log(arr.pop());
 
 arr.push('Plastic');
 
-arr.concat(arr, ['Metal', 'Wood']);
+arr = arr.concat(['Metal', 'Wood']);
 
 console.log(arr + "\n");
 
@@ -35,7 +35,7 @@ if (!value) { console.log(`Value is ${value} \n`); }
 let dec: number = 12;
 let bin: number = 0b1100;
 let oct: number = 0o14;
-let hex: number = 0xc;
+let hex: number = 0xC;
 
 /* Tuples */
 let mixed: any[] = [1, 34, 'string', false]; // mixed datatypes
@@ -51,11 +51,11 @@ let typed2: [string | number, number, boolean]; // Union type
 let people: string[] = ["Pablo", "Ludwig", "Jan", "und alle anderen"];
 
 function Greeter(greeting: string, people: string[]) {
-  let words = greeting;
+  let words = greeting + " ";
   for (let p of people) {
-    words.concat(words, p, " ");
+    words = words.concat(p, ", ");
   }
-  words.concat(words, "!");
+  words = words.concat("!");
   return words;
 }
 
@@ -65,7 +65,8 @@ function Greeter2(greeting: string, ...people: string[]) {
 
 console.log(Greeter("Hello", people));
 
-console.log(Greeter2("Hello", ...people));
+console.log(Greeter2("Hello", "Pablo", "Ludwig", "Jan", "und alle anderen"));
+// console.log(Greeter2("Hello", ...people));
 
 /*interface Person {
   name: string;
@@ -73,7 +74,7 @@ console.log(Greeter2("Hello", ...people));
 }*/
 
 type Person = {
-  name: string;
+  prename: string;
   age: number;
 }
 
@@ -89,12 +90,18 @@ type Employee = {
 
 // Intersection Type, also works with interfaces
 let person: Person & Student & Employee = {
-  name: 'Jan',
+  prename: 'Jan',
   age: 22,
   id: '22346534',
   subject: 'LuRI',
   companyId: '45344636',
   field: ['IT', 'Healthcare']
 };
+
+console.log(person['age']);
+
+const { prename, subject } = person;
+
+console.log(prename)
 
 console.log(person);
