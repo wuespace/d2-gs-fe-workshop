@@ -20,6 +20,10 @@ var tuple = [1, 34, "string", false]; // mixed datatypes
 
 var arr = Array('Rock', 'Pop', 34);
 
+var car = { brand: "Opel", model: "Corsa", year: 2011, horsepower: 101 };
+
+//#region Car
+
 class Car {
     brand;
     model;
@@ -27,12 +31,13 @@ class Car {
     horsepower;
 };
 
+//#endregion 
+
 var bmw = new Car();
 bmw.brand = "BMW";
 bmw.model = "E46 M3 '06";
 bmw.year = 2006;
 bmw.horsepower = 470;
-// ...
 
 console.log(bmw);
 
