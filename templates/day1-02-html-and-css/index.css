@@ -2,6 +2,62 @@
     box-sizing: border-box;
 }
 
+html, :root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
 body {
     margin: 0;
+    background: #b4c7b4;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 640px;
+    background: white;
+    margin: 1em auto; /* 1em top and bottom, auto => center horizontally */
+    padding: 1em;
+}
+
+main {
+    margin-top: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block; /* instead of inline */
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    vertical-align: top;
+}
+
+table td > * {
+    margin: 0;
+}
+
+table tr + tr > td {
+    /* Every table row that follows another table row */
+    margin-top: 1em;
+    border-top: 1px solid black;
+}
+
+pre {
+    background: #eee;
+    padding-left: 1em;
+}
+
+iframe {
+    width: 100%;
 }
