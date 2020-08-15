@@ -1,4 +1,4 @@
-# Day 2 React - Very simple React app
+# React TicTacToe Application Logic
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
