@@ -1,5 +1,3 @@
-// map, concat, filter, ... Arraymethoden
-
 var empty = [];
 var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 var mixed = [false, 3.45, 'Hello', undefined]; // in Javascript you can have mixed values in an array
@@ -85,10 +83,26 @@ value = 0;
 
 //#region Array methods
 
-// Filter
-let bmws = cars.filter(car => car.make === 'BMW');
-console.log(bmws); // returns new array with cars of make BMW
+    //#region Concat
+    let newCars = new Array(new Car('Suzuki', 'Swift', 2009, 68, 'Black', 9000),
+                            new Car('Renault', 'Clio', 2019, 140, 'Brown', 26700),
+                            new Car('BMW', 'Z4 M40i', 2018, 340, 'Violet', 51200));
+    cars = cars.concat(newCars);
+    // console.log(cars);
+    //#endregion
+            
+    //#region  Filter
+    let bmws = cars.filter(car => car.make === 'BMW');
+    // console.log(bmws); // returns new array with cars of make BMW
+    //#endregion
 
+    //#region Map
+    // console.log(cars);
+    // SALE !!!
+    cars.map(car => car.price = car.price - 500);
+    // console.log(cars);
+    //#endregion
 
+    // explore more array methods like splice, sort, toString, etc.
 
 //#endregion
