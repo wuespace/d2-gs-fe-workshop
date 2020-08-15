@@ -26,6 +26,8 @@ Zeigt uns am Ende eure Fortschritte und wir diskutieren über eure innovativen L
 
 Falls ihr Fragen habt, kommt einfach auf uns zu und wir besprechen alles weitere.
 
+Wenn ihr schon fertig seid, überlegt euch weitere sinnvolle Features, die ihr dann auch direkt implementieren könnt!
+
 Viel Glück
 
 Euer Groundstation Team
