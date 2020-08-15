@@ -1,4 +1,6 @@
-export default function calculateWinner(squares) {
+import { Squares } from "../types";
+
+export default function calculateWinner(squares: Squares): string {
   const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -15,5 +17,5 @@ export default function calculateWinner(squares) {
         return squares[a];
       }
     }
-    return null;
+    return '';
 }
