@@ -10,7 +10,9 @@ export default function Game() {
     },
   ]);
   const [step, setStep] = useState(0);
+  
   const [xIsNext, setXIsNext] = useState(true);
+  const [winner, setWinner] = useState();
 
   const handleClick = (i) => {
     const partHistory = history.slice(0, step + 1);
