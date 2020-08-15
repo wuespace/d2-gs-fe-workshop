@@ -18,7 +18,7 @@ for (var _a = 0, arr_2 = arr; _a < arr_2.length; _a++) {
 }
 console.log(arr.pop());
 arr.push('Plastic');
-arr.concat(arr, ['Metal', 'Wood']);
+arr = arr.concat(['Metal', 'Wood']);
 console.log(arr + "\n");
 var value = false;
 if (!value) {
@@ -28,7 +28,7 @@ if (!value) {
 var dec = 12;
 var bin = 12;
 var oct = 12;
-var hex = 0xc;
+var hex = 0xC;
 /* Tuples */
 var mixed = [1, 34, 'string', false]; // mixed datatypes
 console.log(mixed.pop());
@@ -39,12 +39,12 @@ var typed2; // Union type
 /* Rest parameters */
 var people = ["Pablo", "Ludwig", "Jan", "und alle anderen"];
 function Greeter(greeting, people) {
-    var words = greeting;
+    var words = greeting + " ";
     for (var _i = 0, people_1 = people; _i < people_1.length; _i++) {
         var p = people_1[_i];
-        words.concat(words, p, " ");
+        words = words.concat(p, ", ");
     }
-    words.concat(words, "!");
+    words = words.concat("!");
     return words;
 }
 function Greeter2(greeting) {
@@ -55,14 +55,17 @@ function Greeter2(greeting) {
     return greeting + " " + people.join(", ") + "!";
 }
 console.log(Greeter("Hello", people));
-console.log(Greeter2.apply(void 0, ["Hello"].concat(people)));
-// Intersection Type
+console.log(Greeter2("Hello", "Pablo", "Ludwig", "Jan", "und alle anderen"));
+// Intersection Type, also works with interfaces
 var person = {
-    name: 'Jan',
+    prename: 'Jan',
     age: 22,
     id: '22346534',
     subject: 'LuRI',
     companyId: '45344636',
     field: ['IT', 'Healthcare']
 };
+console.log(person['age']);
+var prename = person.prename, subject = person.subject;
+console.log(prename);
 console.log(person);
