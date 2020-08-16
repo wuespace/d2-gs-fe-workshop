@@ -47,6 +47,10 @@ table td > * {
     margin: 0;
 }
 
+table td ul {
+    padding-inline-start: 20px;
+}
+
 table tr + tr > td {
     /* Every table row that follows another table row */
     margin-top: 1em;
@@ -60,4 +64,21 @@ pre {
 
 iframe {
     width: 100%;
+}
+
+.big-red-button {
+    margin: 1em auto;
+    height: 150px;
+    width: 150px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.big-red-button:hover {
+    background: darkred;
+    border: 1px solid #000000
 }
