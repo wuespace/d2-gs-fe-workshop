@@ -2,22 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    
     <title>Mein Steckbrief</title>
     <link rel="stylesheet" href="./index.css" />
     <script src="main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            var testElement = document.getElementById('portrait');
-            testElement.addEventListener("click", function(){ alert("Hello World!"); });
-        });
-    </script>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <h1>Jan Tischhöfer</h1>
+            <h1 id="Name">Jan Tischhöfer</h1>
             <hr> <!--------------->
             <img id="portrait" src="https://www.dailydot.com/wp-content/uploads/6d6/a0/740bf5f811111c88.jpg" 
                     alt="Porträt" width="600" height="300"/>
@@ -61,7 +54,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><!--onclick="alert('DANCE!')"-->Lieblingsplaylist:</td>
+                    <td>Lieblingsplaylist:</td>
                     <td><iframe src="https://open.spotify.com/embed/playlist/4MoCjNvn68hnY1ljlSUNLo" 
                         width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
                     </iframe></td>

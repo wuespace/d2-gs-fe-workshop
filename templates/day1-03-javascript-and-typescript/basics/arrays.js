@@ -105,4 +105,7 @@ value = 0;
 
     // explore more array methods like splice, sort, toString, etc.
 
+    // get all descriptions of my cars in a new array
+    let catalog = cars.map(car => car.description());
+
 //#endregion

@@ -76,7 +76,7 @@ function Greeter2(greeting: string, ...people: string[]) {
 }
 //#endregion
 
-// console.log(Greeter("Hello", people));
+console.log(Greeter("Hello", people));
 
 console.log(Greeter2("Hello", "Pablo", "Ludwig", "Jan", "and everybody else"));
 // console.log(Greeter2("Hello", ...people));
@@ -119,7 +119,7 @@ console.log(person['age']);
 
 const { prename: onlyName, subject: onlySubject } = person;
 
-console.log(onlyName)
+console.log(onlyName);
 
 console.log(person);
 
