@@ -3,7 +3,8 @@
 # React Todo-Liste Lösung
 
 Hier ist die Lösung zur React Todo-Liste.
-Falls du noch dich nochan keiner eigenen Lösung versucht hast, schau bitte erst hier nach:\
+
+Falls du noch dich noch an keiner eigenen Lösung versucht hast, schau bitte erst hier nach: \
 `templates/day2-12-react-todo-list-template`
 
 ## About
